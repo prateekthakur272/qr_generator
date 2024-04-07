@@ -1,16 +1,11 @@
-# qr_generator
+# QR Code Generator
 
-A new Flutter project.
+Qr code generator app built using Flutter
+this app can be used to generate qr codes for:
 
-## Getting Started
+- Wifi
+- WhatsApp
+- Urls
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/prateekthakur272/qr_generator/assets/67188426/8bd635a6-1a58-4bc6-8aa9-f0c7b0cc900a" height=600px>
+<img src="https://github.com/prateekthakur272/qr_generator/assets/67188426/8f146455-6332-483c-9ebe-3c8136d16e7b" height=600px>
