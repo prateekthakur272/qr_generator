@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qr_generator/screens/result_screen/result_screen.dart';
 
 class UrlCodeGenerator extends StatelessWidget {
   const UrlCodeGenerator({super.key});
@@ -16,7 +17,16 @@ class UrlCodeGenerator extends StatelessWidget {
         const SizedBox(
           height: 16,
         ),
-        OutlinedButton(onPressed: () {}, child: const Text('Generate QR Code'))
+        OutlinedButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => ResultScreen(
+                            data: urlController.text.trim(),
+                          )));
+            },
+            child: const Text('Generate QR Code'))
       ],
     );
   }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:qr_generator/extensions/build_context.dart';
 import 'package:qr_generator/screens/home_screen/widgets/url_code_generator.dart';
 import 'package:qr_generator/screens/home_screen/widgets/whatsapp_code_generator.dart';

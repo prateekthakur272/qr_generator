@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qr_generator/screens/result_screen/result_screen.dart';
 
 class WifiPasswordCodeGenerator extends StatelessWidget {
   const WifiPasswordCodeGenerator({super.key});
@@ -25,7 +26,17 @@ class WifiPasswordCodeGenerator extends StatelessWidget {
         const SizedBox(
           height: 16,
         ),
-        OutlinedButton(onPressed: () {}, child: const Text('Generate QR Code'))
+        OutlinedButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => ResultScreen(
+                            data:
+                                'WIFI:S:${ssidController.text.trim()};T:WPA;P:${passwordController.text.trim()};;',
+                          )));
+            },
+            child: const Text('Generate QR Code'))
       ],
     );
   }
